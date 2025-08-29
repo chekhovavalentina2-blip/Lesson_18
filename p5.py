@@ -18,7 +18,7 @@ race_data = {
 
 @app.get("/", response_class=HTMLResponse)
 def home():
-    return open("PRACTICE\lesson-18\index.html", "r", encoding="utf-8").read()
+    return open("index.html", "r", encoding="utf-8").read()
 
 
 async def car_race(car_index):
@@ -68,5 +68,5 @@ def get_status():
 
 
 if __name__ == "__main__":
-     uvicorn.run(app, host="127.0.0.1", port=8000)
+     uvicorn.run(app, host="127.0.0.1", port=8001)
      
